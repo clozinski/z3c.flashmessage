@@ -2,12 +2,13 @@ import os.path
 from setuptools import setup, find_packages
 
 def read(*path_elements):
-    return "\n\n" + file(os.path.join(*path_elements)).read()
+    return "\n\n" + open(os.path.join(*path_elements)).read()
 
 
 setup(
     name = "z3c.flashmessage",
-    version='1.4dev',
+
+    version='1.4dev.2',
     author = "Jasper Op de Coul, Christian Theune",
     author_email = "jasper@infrae.com, ct@gocept.com",
     description = "A package for sending `flash messages` to users.",
